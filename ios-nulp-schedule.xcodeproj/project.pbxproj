@@ -7,30 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA5E383528F9A47800969B85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E383428F9A47800969B85 /* AppDelegate.swift */; };
-		CA5E383728F9A47800969B85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E383628F9A47800969B85 /* SceneDelegate.swift */; };
-		CA5E383928F9A47800969B85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E383828F9A47800969B85 /* ViewController.swift */; };
-		CA5E383C28F9A47800969B85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5E383A28F9A47800969B85 /* Main.storyboard */; };
+		0F19C9CA303BA74EA21702AD /* Pods_ios_nulp_schedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E89AD667B18A452566729A0 /* Pods_ios_nulp_schedule.framework */; };
 		CA5E383E28F9A47A00969B85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA5E383D28F9A47A00969B85 /* Assets.xcassets */; };
 		CA5E384128F9A47A00969B85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5E383F28F9A47A00969B85 /* LaunchScreen.storyboard */; };
 		CA5E384928F9A93300969B85 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CA5E384828F9A93300969B85 /* Podfile */; };
 		CA5E384B28F9B12F00969B85 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CA5E384A28F9B12F00969B85 /* .gitignore */; };
-		F684C02BD2ED472600B228C6 /* libPods-ios-nulp-schedule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2AF4D0158B5FE1141B4B981 /* libPods-ios-nulp-schedule.a */; };
+		CA5E385828F9B58D00969B85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E385728F9B58D00969B85 /* AppDelegate.swift */; };
+		CA5E385A28F9B58E00969B85 /* CoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E385928F9B58E00969B85 /* CoreViewController.swift */; };
+		CA5E386128F9BDA400969B85 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E386028F9BDA400969B85 /* UIColor+Extensions.swift */; };
+		CA5E386328F9BE2D00969B85 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E386228F9BE2D00969B85 /* CoordinatorProtocol.swift */; };
+		CA5E386528F9BE5B00969B85 /* NavigationControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E386428F9BE5B00969B85 /* NavigationControllerProtocol.swift */; };
+		CA5E386928F9C03F00969B85 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E386828F9C03F00969B85 /* ViewModelProtocol.swift */; };
+		CA5E386B28F9C06D00969B85 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E386A28F9C06D00969B85 /* ViewModel.swift */; };
+		CA5E386D28F9C0A200969B85 /* OriginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E386C28F9C0A200969B85 /* OriginCoordinator.swift */; };
+		CA5E386F28F9C14C00969B85 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E386E28F9C14C00969B85 /* NavigationController.swift */; };
+		CA5E387128F9C3D300969B85 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E387028F9C3D300969B85 /* DataSource.swift */; };
+		CA5E387428F9C40A00969B85 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E387328F9C40A00969B85 /* ServiceProvider.swift */; };
+		CA5E387728F9C47C00969B85 /* ServiceProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E387628F9C47C00969B85 /* ServiceProviderType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E89AD667B18A452566729A0 /* Pods_ios_nulp_schedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_nulp_schedule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BD87BCF4D39E3289C8AC9BF /* Pods-ios-nulp-schedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-nulp-schedule.debug.xcconfig"; path = "Target Support Files/Pods-ios-nulp-schedule/Pods-ios-nulp-schedule.debug.xcconfig"; sourceTree = "<group>"; };
-		B2AF4D0158B5FE1141B4B981 /* libPods-ios-nulp-schedule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios-nulp-schedule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5E383128F9A47800969B85 /* ios-nulp-schedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-nulp-schedule.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA5E383428F9A47800969B85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA5E383628F9A47800969B85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CA5E383828F9A47800969B85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CA5E383B28F9A47800969B85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA5E383D28F9A47A00969B85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA5E384028F9A47A00969B85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA5E384228F9A47A00969B85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CA5E384828F9A93300969B85 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		CA5E384828F9A93300969B85 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CA5E384A28F9B12F00969B85 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		CA5E385728F9B58D00969B85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA5E385928F9B58E00969B85 /* CoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreViewController.swift; sourceTree = "<group>"; };
+		CA5E386028F9BDA400969B85 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		CA5E386228F9BE2D00969B85 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		CA5E386428F9BE5B00969B85 /* NavigationControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerProtocol.swift; sourceTree = "<group>"; };
+		CA5E386828F9C03F00969B85 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		CA5E386A28F9C06D00969B85 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		CA5E386C28F9C0A200969B85 /* OriginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginCoordinator.swift; sourceTree = "<group>"; };
+		CA5E386E28F9C14C00969B85 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		CA5E387028F9C3D300969B85 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		CA5E387328F9C40A00969B85 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		CA5E387628F9C47C00969B85 /* ServiceProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderType.swift; sourceTree = "<group>"; };
 		EB7A1399D592E9DA9FC7BAC0 /* Pods-ios-nulp-schedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-nulp-schedule.release.xcconfig"; path = "Target Support Files/Pods-ios-nulp-schedule/Pods-ios-nulp-schedule.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F684C02BD2ED472600B228C6 /* libPods-ios-nulp-schedule.a in Frameworks */,
+				0F19C9CA303BA74EA21702AD /* Pods_ios_nulp_schedule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,7 +65,7 @@
 		1ADD482AE010262C82575D0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B2AF4D0158B5FE1141B4B981 /* libPods-ios-nulp-schedule.a */,
+				4E89AD667B18A452566729A0 /* Pods_ios_nulp_schedule.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -86,15 +102,95 @@
 		CA5E383328F9A47800969B85 /* ios-nulp-schedule */ = {
 			isa = PBXGroup;
 			children = (
-				CA5E383428F9A47800969B85 /* AppDelegate.swift */,
-				CA5E383628F9A47800969B85 /* SceneDelegate.swift */,
-				CA5E383828F9A47800969B85 /* ViewController.swift */,
-				CA5E383A28F9A47800969B85 /* Main.storyboard */,
+				CA5E385B28F9B59A00969B85 /* Sources */,
 				CA5E383D28F9A47A00969B85 /* Assets.xcassets */,
 				CA5E383F28F9A47A00969B85 /* LaunchScreen.storyboard */,
 				CA5E384228F9A47A00969B85 /* Info.plist */,
 			);
 			path = "ios-nulp-schedule";
+			sourceTree = "<group>";
+		};
+		CA5E385B28F9B59A00969B85 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CA5E385D28F9B5B500969B85 /* UI */,
+				CA5E385C28F9B5B000969B85 /* Model */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		CA5E385C28F9B5B000969B85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA5E387228F9C3F800969B85 /* Services */,
+				CA5E386728F9C02B00969B85 /* Protocols */,
+				CA5E386A28F9C06D00969B85 /* ViewModel.swift */,
+				CA5E387028F9C3D300969B85 /* DataSource.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA5E385D28F9B5B500969B85 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CA5E385F28F9BD9500969B85 /* Extensions */,
+				CA5E385728F9B58D00969B85 /* AppDelegate.swift */,
+				CA5E385E28F9B5BA00969B85 /* Core */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CA5E385E28F9B5BA00969B85 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CA5E386628F9BFFC00969B85 /* Protocols */,
+				CA5E385928F9B58E00969B85 /* CoreViewController.swift */,
+				CA5E386C28F9C0A200969B85 /* OriginCoordinator.swift */,
+				CA5E386E28F9C14C00969B85 /* NavigationController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CA5E385F28F9BD9500969B85 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CA5E386028F9BDA400969B85 /* UIColor+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CA5E386628F9BFFC00969B85 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CA5E386428F9BE5B00969B85 /* NavigationControllerProtocol.swift */,
+				CA5E386228F9BE2D00969B85 /* CoordinatorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CA5E386728F9C02B00969B85 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CA5E386828F9C03F00969B85 /* ViewModelProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CA5E387228F9C3F800969B85 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CA5E387528F9C40F00969B85 /* Protocols */,
+				CA5E387328F9C40A00969B85 /* ServiceProvider.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CA5E387528F9C40F00969B85 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CA5E387628F9C47C00969B85 /* ServiceProviderType.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +204,7 @@
 				CA5E382D28F9A47800969B85 /* Sources */,
 				CA5E382E28F9A47800969B85 /* Frameworks */,
 				CA5E382F28F9A47800969B85 /* Resources */,
+				E8999CFDFAA5345E3D7861CB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,7 +257,6 @@
 				CA5E384128F9A47A00969B85 /* LaunchScreen.storyboard in Resources */,
 				CA5E383E28F9A47A00969B85 /* Assets.xcassets in Resources */,
 				CA5E384928F9A93300969B85 /* Podfile in Resources */,
-				CA5E383C28F9A47800969B85 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +285,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E8999CFDFAA5345E3D7861CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-nulp-schedule/Pods-ios-nulp-schedule-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-nulp-schedule/Pods-ios-nulp-schedule-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-nulp-schedule/Pods-ios-nulp-schedule-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -196,23 +309,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA5E383928F9A47800969B85 /* ViewController.swift in Sources */,
-				CA5E383528F9A47800969B85 /* AppDelegate.swift in Sources */,
-				CA5E383728F9A47800969B85 /* SceneDelegate.swift in Sources */,
+				CA5E385A28F9B58E00969B85 /* CoreViewController.swift in Sources */,
+				CA5E386128F9BDA400969B85 /* UIColor+Extensions.swift in Sources */,
+				CA5E386928F9C03F00969B85 /* ViewModelProtocol.swift in Sources */,
+				CA5E386328F9BE2D00969B85 /* CoordinatorProtocol.swift in Sources */,
+				CA5E386F28F9C14C00969B85 /* NavigationController.swift in Sources */,
+				CA5E385828F9B58D00969B85 /* AppDelegate.swift in Sources */,
+				CA5E386528F9BE5B00969B85 /* NavigationControllerProtocol.swift in Sources */,
+				CA5E386D28F9C0A200969B85 /* OriginCoordinator.swift in Sources */,
+				CA5E387128F9C3D300969B85 /* DataSource.swift in Sources */,
+				CA5E387428F9C40A00969B85 /* ServiceProvider.swift in Sources */,
+				CA5E387728F9C47C00969B85 /* ServiceProviderType.swift in Sources */,
+				CA5E386B28F9C06D00969B85 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CA5E383A28F9A47800969B85 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CA5E383B28F9A47800969B85 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CA5E383F28F9A47A00969B85 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -350,9 +464,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ios-nulp-schedule/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "NULP Schedule";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -384,9 +499,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ios-nulp-schedule/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "NULP Schedule";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
