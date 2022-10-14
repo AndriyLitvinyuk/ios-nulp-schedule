@@ -10,14 +10,16 @@ import UIKit
 class OriginCoordinator: CoordinatorProtocol {
     let navigationController: NavigationControllerProtocol?
     let window: UIWindow?
+    let serviceProvider: ServiceProviderType
 
-    init(window: UIWindow?, navigationController: NavigationControllerProtocol?) {
+    init(window: UIWindow?, navigationController: NavigationControllerProtocol?, serviceProvider: ServiceProviderType) {
         self.window = window
         self.navigationController = navigationController
+        self.serviceProvider = serviceProvider
     }
 
     func start() {
-        let viewModel = ViewModel()
+        let viewModel = ViewModel(dataSource: MainDataSource(serviceProvider: serviceProvider))
         let viewController = CoreViewController(viewModel: viewModel)
         window?.rootViewController = viewController
     }

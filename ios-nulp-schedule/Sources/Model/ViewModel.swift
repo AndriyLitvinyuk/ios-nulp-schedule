@@ -7,6 +7,10 @@
 
 import Foundation
 
-class ViewModel: ViewModelProtocol {
-    
+class ViewModel<DataSourceProtocol>: ViewModelProtocol {
+    let dataSource: DataSourceProtocol
+
+    init(dataSource: DataSourceProtocol) {
+        self.dataSource = dataSource
+    }
 }

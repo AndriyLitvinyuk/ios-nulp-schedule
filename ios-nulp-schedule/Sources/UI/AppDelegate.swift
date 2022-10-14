@@ -17,7 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let coordinator = OriginCoordinator(window: self.window, navigationController: NavigationController())
+        let serviceProvider = ServiceProvider()
+        let coordinator = OriginCoordinator(
+            window: self.window,
+            navigationController: NavigationController(),
+            serviceProvider: serviceProvider
+        )
         coordinator.start()
         return true
     }

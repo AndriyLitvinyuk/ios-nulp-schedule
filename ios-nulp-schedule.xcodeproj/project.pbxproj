@@ -21,9 +21,13 @@
 		CA5E386B28F9C06D00969B85 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E386A28F9C06D00969B85 /* ViewModel.swift */; };
 		CA5E386D28F9C0A200969B85 /* OriginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E386C28F9C0A200969B85 /* OriginCoordinator.swift */; };
 		CA5E386F28F9C14C00969B85 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E386E28F9C14C00969B85 /* NavigationController.swift */; };
-		CA5E387128F9C3D300969B85 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E387028F9C3D300969B85 /* DataSource.swift */; };
+		CA5E387128F9C3D300969B85 /* MainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E387028F9C3D300969B85 /* MainDataSource.swift */; };
 		CA5E387428F9C40A00969B85 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E387328F9C40A00969B85 /* ServiceProvider.swift */; };
 		CA5E387728F9C47C00969B85 /* ServiceProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E387628F9C47C00969B85 /* ServiceProviderType.swift */; };
+		CA5E387928F9C55C00969B85 /* DataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E387828F9C55C00969B85 /* DataSourceProtocol.swift */; };
+		CA5E387B28F9C66000969B85 /* ParserServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E387A28F9C66000969B85 /* ParserServiceProtocol.swift */; };
+		CA5E387D28F9C68200969B85 /* ParserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E387C28F9C68200969B85 /* ParserService.swift */; };
+		CAC4329728F9F67200899E91 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4329628F9F67200899E91 /* Array+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,9 +48,13 @@
 		CA5E386A28F9C06D00969B85 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		CA5E386C28F9C0A200969B85 /* OriginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginCoordinator.swift; sourceTree = "<group>"; };
 		CA5E386E28F9C14C00969B85 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
-		CA5E387028F9C3D300969B85 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		CA5E387028F9C3D300969B85 /* MainDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataSource.swift; sourceTree = "<group>"; };
 		CA5E387328F9C40A00969B85 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
 		CA5E387628F9C47C00969B85 /* ServiceProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderType.swift; sourceTree = "<group>"; };
+		CA5E387828F9C55C00969B85 /* DataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceProtocol.swift; sourceTree = "<group>"; };
+		CA5E387A28F9C66000969B85 /* ParserServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserServiceProtocol.swift; sourceTree = "<group>"; };
+		CA5E387C28F9C68200969B85 /* ParserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserService.swift; sourceTree = "<group>"; };
+		CAC4329628F9F67200899E91 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		EB7A1399D592E9DA9FC7BAC0 /* Pods-ios-nulp-schedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-nulp-schedule.release.xcconfig"; path = "Target Support Files/Pods-ios-nulp-schedule/Pods-ios-nulp-schedule.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,10 +130,11 @@
 		CA5E385C28F9B5B000969B85 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CAC4329528F9F66300899E91 /* Extensions */,
 				CA5E387228F9C3F800969B85 /* Services */,
 				CA5E386728F9C02B00969B85 /* Protocols */,
 				CA5E386A28F9C06D00969B85 /* ViewModel.swift */,
-				CA5E387028F9C3D300969B85 /* DataSource.swift */,
+				CA5E387028F9C3D300969B85 /* MainDataSource.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				CA5E386828F9C03F00969B85 /* ViewModelProtocol.swift */,
+				CA5E387828F9C55C00969B85 /* DataSourceProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -181,6 +191,7 @@
 			children = (
 				CA5E387528F9C40F00969B85 /* Protocols */,
 				CA5E387328F9C40A00969B85 /* ServiceProvider.swift */,
+				CA5E387C28F9C68200969B85 /* ParserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -189,8 +200,17 @@
 			isa = PBXGroup;
 			children = (
 				CA5E387628F9C47C00969B85 /* ServiceProviderType.swift */,
+				CA5E387A28F9C66000969B85 /* ParserServiceProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CAC4329528F9F66300899E91 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CAC4329628F9F67200899E91 /* Array+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,13 +331,17 @@
 			files = (
 				CA5E385A28F9B58E00969B85 /* CoreViewController.swift in Sources */,
 				CA5E386128F9BDA400969B85 /* UIColor+Extensions.swift in Sources */,
+				CA5E387D28F9C68200969B85 /* ParserService.swift in Sources */,
+				CA5E387B28F9C66000969B85 /* ParserServiceProtocol.swift in Sources */,
 				CA5E386928F9C03F00969B85 /* ViewModelProtocol.swift in Sources */,
+				CA5E387928F9C55C00969B85 /* DataSourceProtocol.swift in Sources */,
 				CA5E386328F9BE2D00969B85 /* CoordinatorProtocol.swift in Sources */,
 				CA5E386F28F9C14C00969B85 /* NavigationController.swift in Sources */,
 				CA5E385828F9B58D00969B85 /* AppDelegate.swift in Sources */,
 				CA5E386528F9BE5B00969B85 /* NavigationControllerProtocol.swift in Sources */,
 				CA5E386D28F9C0A200969B85 /* OriginCoordinator.swift in Sources */,
-				CA5E387128F9C3D300969B85 /* DataSource.swift in Sources */,
+				CAC4329728F9F67200899E91 /* Array+Extensions.swift in Sources */,
+				CA5E387128F9C3D300969B85 /* MainDataSource.swift in Sources */,
 				CA5E387428F9C40A00969B85 /* ServiceProvider.swift in Sources */,
 				CA5E387728F9C47C00969B85 /* ServiceProviderType.swift in Sources */,
 				CA5E386B28F9C06D00969B85 /* ViewModel.swift in Sources */,
