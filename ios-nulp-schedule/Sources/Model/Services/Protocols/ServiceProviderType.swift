@@ -7,6 +7,8 @@
 
 import Foundation
 
-public protocol ServiceProviderType {
-    
+public protocol ParserServiceProvider {
+    var parserService: ParserServiceProtocol { get }
 }
+
+public protocol ServiceProviderType: ParserServiceProvider { }

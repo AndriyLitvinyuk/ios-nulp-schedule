@@ -7,4 +7,5 @@
 
 import Foundation
 
-public protocol ViewModelProtocol: AnyObject {}
+public protocol ViewModelProtocol {
+}

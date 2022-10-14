@@ -8,5 +8,9 @@
 import Foundation
 
 class ServiceProvider: ServiceProviderType {
+    let parserService: ParserServiceProtocol
 
+    init() {
+        self.parserService = ParserService()
+    }
 }
