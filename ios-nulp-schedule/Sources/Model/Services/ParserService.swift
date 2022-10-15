@@ -9,7 +9,7 @@ import Foundation
 import SwiftSoup
 import ReactiveSwift
 
-public class ParserService: ParserServiceProtocol {
+public final class ParserService: ParserServiceProtocol {
     typealias HTML = String
     var baseUrlString: String {
         "https://student.lpnu.ua/students_schedule"

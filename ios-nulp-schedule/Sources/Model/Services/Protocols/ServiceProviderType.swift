@@ -11,4 +11,12 @@ public protocol ParserServiceProvider {
     var parserService: ParserServiceProtocol { get }
 }
 
-public protocol ServiceProviderType: ParserServiceProvider { }
+public protocol AppServiceProvider {
+    var appService: AppServiceProtocol { get }
+}
+
+public protocol CacheServiceProvider {
+    var cacheService: CacheServiceProtocol { get }
+}
+
+public protocol ServiceProviderType: ParserServiceProvider & AppServiceProvider & CacheServiceProvider { }
