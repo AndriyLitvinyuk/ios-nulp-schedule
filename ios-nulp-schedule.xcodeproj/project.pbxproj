@@ -27,7 +27,12 @@
 		CA5E387928F9C55C00969B85 /* DataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E387828F9C55C00969B85 /* DataSourceProtocol.swift */; };
 		CA5E387B28F9C66000969B85 /* ParserServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E387A28F9C66000969B85 /* ParserServiceProtocol.swift */; };
 		CA5E387D28F9C68200969B85 /* ParserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E387C28F9C68200969B85 /* ParserService.swift */; };
+		CA9C4BDC28FAF56E0067CB22 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9C4BDB28FAF56E0067CB22 /* CacheService.swift */; };
+		CA9C4BDE28FAF5910067CB22 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9C4BDD28FAF5910067CB22 /* Day.swift */; };
+		CA9C4BE028FB0B5B0067CB22 /* CacheServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9C4BDF28FB0B5B0067CB22 /* CacheServiceProtocol.swift */; };
 		CAC4329728F9F67200899E91 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4329628F9F67200899E91 /* Array+Extensions.swift */; };
+		CAC4329928F9F82300899E91 /* AppServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4329828F9F82300899E91 /* AppServiceProtocol.swift */; };
+		CAC4329B28F9F90400899E91 /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4329A28F9F90400899E91 /* AppService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,7 +59,12 @@
 		CA5E387828F9C55C00969B85 /* DataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceProtocol.swift; sourceTree = "<group>"; };
 		CA5E387A28F9C66000969B85 /* ParserServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserServiceProtocol.swift; sourceTree = "<group>"; };
 		CA5E387C28F9C68200969B85 /* ParserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserService.swift; sourceTree = "<group>"; };
+		CA9C4BDB28FAF56E0067CB22 /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
+		CA9C4BDD28FAF5910067CB22 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		CA9C4BDF28FB0B5B0067CB22 /* CacheServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheServiceProtocol.swift; sourceTree = "<group>"; };
 		CAC4329628F9F67200899E91 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		CAC4329828F9F82300899E91 /* AppServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServiceProtocol.swift; sourceTree = "<group>"; };
+		CAC4329A28F9F90400899E91 /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
 		EB7A1399D592E9DA9FC7BAC0 /* Pods-ios-nulp-schedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-nulp-schedule.release.xcconfig"; path = "Target Support Files/Pods-ios-nulp-schedule/Pods-ios-nulp-schedule.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +145,7 @@
 				CA5E386728F9C02B00969B85 /* Protocols */,
 				CA5E386A28F9C06D00969B85 /* ViewModel.swift */,
 				CA5E387028F9C3D300969B85 /* MainDataSource.swift */,
+				CA9C4BDD28FAF5910067CB22 /* Day.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,6 +203,8 @@
 				CA5E387528F9C40F00969B85 /* Protocols */,
 				CA5E387328F9C40A00969B85 /* ServiceProvider.swift */,
 				CA5E387C28F9C68200969B85 /* ParserService.swift */,
+				CAC4329A28F9F90400899E91 /* AppService.swift */,
+				CA9C4BDB28FAF56E0067CB22 /* CacheService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -201,6 +214,8 @@
 			children = (
 				CA5E387628F9C47C00969B85 /* ServiceProviderType.swift */,
 				CA5E387A28F9C66000969B85 /* ParserServiceProtocol.swift */,
+				CAC4329828F9F82300899E91 /* AppServiceProtocol.swift */,
+				CA9C4BDF28FB0B5B0067CB22 /* CacheServiceProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -330,20 +345,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA5E385A28F9B58E00969B85 /* CoreViewController.swift in Sources */,
+				CAC4329B28F9F90400899E91 /* AppService.swift in Sources */,
 				CA5E386128F9BDA400969B85 /* UIColor+Extensions.swift in Sources */,
 				CA5E387D28F9C68200969B85 /* ParserService.swift in Sources */,
 				CA5E387B28F9C66000969B85 /* ParserServiceProtocol.swift in Sources */,
 				CA5E386928F9C03F00969B85 /* ViewModelProtocol.swift in Sources */,
+				CAC4329928F9F82300899E91 /* AppServiceProtocol.swift in Sources */,
 				CA5E387928F9C55C00969B85 /* DataSourceProtocol.swift in Sources */,
 				CA5E386328F9BE2D00969B85 /* CoordinatorProtocol.swift in Sources */,
 				CA5E386F28F9C14C00969B85 /* NavigationController.swift in Sources */,
 				CA5E385828F9B58D00969B85 /* AppDelegate.swift in Sources */,
+				CA9C4BE028FB0B5B0067CB22 /* CacheServiceProtocol.swift in Sources */,
 				CA5E386528F9BE5B00969B85 /* NavigationControllerProtocol.swift in Sources */,
 				CA5E386D28F9C0A200969B85 /* OriginCoordinator.swift in Sources */,
 				CAC4329728F9F67200899E91 /* Array+Extensions.swift in Sources */,
+				CA9C4BDC28FAF56E0067CB22 /* CacheService.swift in Sources */,
 				CA5E387128F9C3D300969B85 /* MainDataSource.swift in Sources */,
 				CA5E387428F9C40A00969B85 /* ServiceProvider.swift in Sources */,
 				CA5E387728F9C47C00969B85 /* ServiceProviderType.swift in Sources */,
+				CA9C4BDE28FAF5910067CB22 /* Day.swift in Sources */,
 				CA5E386B28F9C06D00969B85 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
